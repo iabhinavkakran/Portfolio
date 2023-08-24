@@ -1,55 +1,70 @@
-@import '../../styles/constants.scss';
+@import "../../styles/constants.scss";
 
-.wrapper{
-    background: white;
-    .container{
-        gap: 2rem;
-        @media (max-width: $sm) {
-            flex-direction: column;
-            gap: 2rem;
-            align-items: flex-start;
-        }
-        .left{
-            flex: 3;
-            >*{
-                display: block;
-            }
-            >:nth-child(2)
-            {
-                margin-top: 3rem;
-
-                a{
-                    text-decoration: underline;
-                    color: orange;
-                }
-            }
-        }
-
-
-        .right{
-            flex: 1;
-            .info{
-                margin-bottom: 1rem;
-                >*{
-                    display: block;
-                }
-            }
-            .menu{
-                @media (max-width: $sm) {
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                }
-                display: flex;
-                flex-direction: column;
-                gap: 2rem;
-                list-style: none;
-                li{
-                    cursor: pointer;
-                    &:hover{
-                        color: $secondary
-                    }
-                }
-            }
-        }
+.wrapper {
+  .container {
+    gap: 2rem;
+    @media (max-width: $sm) {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: flex-start;
     }
+    .left {
+      flex: 3;
+      > * {
+        display: block;
+      }
+      > :nth-child(2) {
+        margin-top: 3rem;
+
+        a {
+          text-decoration: underline;
+          color: orange;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      .info {
+        margin-bottom: 1rem;
+        > * {
+          display: block;
+        }
+      }
+      .menu {
+        @media (max-width: $sm) {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: none;
+        li {
+          cursor: pointer;
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+    }
+    .socialIcons {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .socialIcons img {
+      width: 30px;
+      height: 30px;
+    }
+    a {
+      text-decoration: none;
+      font-family: "Poppins", sans-serif;
+      color: #0d2f3f;
+    }
+    a:hover {
+      color: #286f6c;
+    }
+  }
 }

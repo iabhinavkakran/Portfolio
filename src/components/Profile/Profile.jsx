@@ -1,8 +1,8 @@
 import React from "react";
-import css from "../Hero/Hero.module.scss";
+import css from "./Profile.module.scss";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn, staggerContainer } from "../../utils/motion";
-const Hero = () => {
+const Profile = () => {
   return (
     <section className={`paddings ${css.wrapper}`}>
       <motion.div
@@ -24,8 +24,12 @@ const Hero = () => {
             variants={fadeIn("left", "tween", 0.2, 1)}
             className="secondaryText"
           >
-            I develop beautiful simple <br />
-            things ,And I love what i do
+            Dedicated to the art of Web Development
+            <br />
+            using the dynamic MERN stack, <br />
+            fashioning beautifully simple creations <br />
+            that resonate with my genuine passion <br />
+            for what I do.
           </motion.span>
         </div>
 
@@ -48,7 +52,7 @@ const Hero = () => {
         {/* lower elements */}
         <div className={` ${css.lowerElements}`}>
           <div className={css.experience}>
-            <div className="primaryText">2.6</div>
+            <div className="primaryText">2.6+</div>
             <div className="secondarytext">
               <div>Year</div>
               <div>Experience</div>
@@ -59,9 +63,13 @@ const Hero = () => {
             variants={fadeIn("left", "tween", 0.5, 1)}
             className={css.certificate}
           >
-            <img src="./certificate.png" alt="" />
-            <span>CERTIFIED PROFATIONAL</span>
-            <span>UI/UX DESIGNER</span>
+            <a
+              href="./Abhinav's-Resume.pdf"
+              download
+              className={css.downloadButton}
+            >
+              Download Resume
+            </a>
           </motion.div>
         </div>
       </motion.div>
@@ -69,4 +77,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Profile;

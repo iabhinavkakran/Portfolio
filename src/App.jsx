@@ -1,28 +1,23 @@
-import Experties from "./components/Experties/Experties";
+import Skills from "./components/Skills/Skills";
 import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import css from './styles/app.module.scss'
-import Work from './components/Work/Work'
-import Portfolio from "./components/Portfolio/Portfolio";
-import People from "./components/People/People";
+import Profile from "./components/Profile/Profile";
+import css from "./styles/app.module.scss";
+import Work from "./components/Work/Work";
+import Project from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
+import Education from "./components/Education/Education";
 const App = () => {
-  //don't forget to add font link in index.html
-  return <div div className={ `bg-primary ${css.container} ` }>
-
-  <Header/>
-  <Hero/>
-  <Experties/>
-<Work/>
-<Portfolio/>
-<People/>
-<Footer/>
-  </div>
-  
-  
-  
-  
-
+  return (
+    <div div className={`bg-primary ${css.container} `}>
+      <Header />
+      <Profile />
+      <Work />
+      <Skills />
+      <Education />
+      <Project />
+      <Footer />
+    </div>
+  );
 };
 
 export default App;

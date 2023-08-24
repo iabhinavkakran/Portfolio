@@ -1,0 +1,44 @@
+@import "../../styles/constants.scss";
+
+.wrapper {
+  background: white;
+
+  .container {
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+    > div {
+      flex: 1;
+    }
+  }
+
+  .skillsContainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .skillLogo {
+    width: 120px;
+    height: 90px;
+    margin: 0 20px; /* Adjust spacing between logos */
+  }
+
+  @media (max-width: $sm) {
+    .container {
+      gap: 1rem;
+    }
+
+    .skillsContainer {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+    .skillLogo {
+      width: 80px;
+      height: 60px;
+      margin: 10px 0;
+    }
+  }
+}

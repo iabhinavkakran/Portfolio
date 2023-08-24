@@ -1,5 +1,5 @@
 import React from "react";
-import { workExp } from "../../utils/data";
+import { education } from "../../utils/data";
 import { motion } from "framer-motion";
 import {
   fadeIn,
@@ -7,9 +7,9 @@ import {
   textVariant2,
   zoomIn,
 } from "../../utils/motion";
-import css from "./Work.module.scss";
+import css from "./Education.module.scss";
 
-const Work = () => {
+const Education = () => {
   return (
     <motion.section
       variants={staggerChildren}
@@ -21,11 +21,11 @@ const Work = () => {
       <section className={css.wrapper}>
         <a className="anchor" id="education"></a>
         <div className={`innerWidth flexCenter ${css.container}`}>
-          <span className="primaryText yPaddings">Work Experience</span>
+          <span className="primaryText yPaddings">Education</span>
         </div>
         <div className={`innerWidth flexCenter ${css.container}`}>
           <div className={`flexCenter ${css.experiences}`}>
-            {workExp.map((exp, i) => {
+            {education.map((exp, i) => {
               return (
                 <motion.div
                   variants={textVariant2}
@@ -33,13 +33,12 @@ const Work = () => {
                   className={`flexCenter ${css.exp}`}
                 >
                   <div className={css.post}>
-                    <h1>{exp.place}</h1>
+                    <h1>{exp.course}</h1>
                     <p>{exp.tenure}</p>
-                    <p>{exp.employmentType}</p>
                     <p>{exp.location}</p>
                   </div>
                   <div className={css.role}>
-                    <h1>{exp.role}</h1>
+                    <h1>{exp.place}</h1>
                     <p>{exp.detail}</p>
                   </div>
                 </motion.div>
@@ -77,4 +76,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Education;

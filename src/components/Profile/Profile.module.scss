@@ -84,7 +84,41 @@
       position: absolute;
       top: 50%;
       left: 0;
-      color: orange;
+      color: #fff;
+      display: inline-block;
+      background-color: rgb(240, 165, 26);
+      padding: 5px 10px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .email:hover {
+      background-color: rgb(222, 146, 4);
+      transform: scale(1.05);
     }
   }
+}
+
+.downloadButton {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.downloadButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }

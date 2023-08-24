@@ -36,19 +36,21 @@ const Header = () => {
           style={getMenuStyles(menuOpened)}
         >
           <li>
-            <a href="#experties">Services</a>
+            <a href="#work">Work Experience</a>
           </li>
           <li>
-            <a href="#work">Experience</a>
+            <a href="#skills">My Skills</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#education">Education</a>
           </li>
           <li>
-            <a href="#people">Testimonials</a>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
           <li className={`flexCenter ${css.phone}`}>
-            <p>+91 7669910064</p>
             <a href="tel:+917669910064">
               <BiPhoneCall size={"40px"} />
             </a>
